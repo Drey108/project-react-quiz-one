@@ -1,29 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import '../App.css';
 
-import '../App.css'
-
-class QuizComponent extends Component {
+class CustomQuizComponent extends Component {
   render() {
     return (
-      <div class='question'>
-        <h1 class='que'>Question</h1>
+      <div className='custom-question'>
+        <h1 className='custom-que'>Question</h1>
         <h5>1 of 15</h5>
         <h3>Which is the only mammal that can jump?</h3>
-        <div class='options'>
-            <button class='opt-btn'>Dog</button>
-            <button class='opt-btn'>Elephant</button>
-            <button class='opt-btn'>Goat</button>
-            <button class='opt-btn'>Lion</button>
+        <div className='custom-options'>
+          <button className='custom-opt-btn'>Dog</button>
+          <button className='custom-opt-btn'>Elephant</button>
+          <button className='custom-opt-btn'>Goat</button>
+          <button className='custom-opt-btn'>Lion</button>
         </div>
-        <div class='sub'>
-            <button class='submit-1'>Previous</button>
-            <button class='submit-2'>Next</button>
-            <button class='submit-3'>Quit</button>
+        <div className='custom-sub'>
+          <button className='custom-submit-1'>Previous</button>
+          <button className='custom-submit-2'>Next</button>
+          <button className='custom-submit-3'>Quit</button>
         </div>
       </div>
-    )
+    );
   }
 }
 
-
-export default QuizComponent
+export default CustomQuizComponent;
